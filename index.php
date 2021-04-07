@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="include/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
-    <title>Danse Replay</title>
+    <title>Dance Replay</title>
 </head>
 
 
