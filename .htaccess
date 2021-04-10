@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule "^(\w+)$" ?s=$1 [L,QSA]

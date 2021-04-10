@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // MYSQL Credentials
 define('HOST', 'localhost');

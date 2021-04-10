@@ -30,14 +30,17 @@ header {
 }
 
 section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.preview {
     display: flex;
     flex: 200px 1fr;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: left;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -65,6 +68,15 @@ section {
     font-family: 'Montserrat', sans-serif;
 }
 
+.admin input, .admin select{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+/* ANNIMATION */
 @keyframes shaker {
 	0% { transform: translate(3px, 0); }
 	50% { transform: translate(-3px, 0); }
