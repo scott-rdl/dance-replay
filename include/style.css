@@ -35,7 +35,7 @@ section {
     padding: 20px;
 }
 
-.preview {
+#card {
     display: flex;
     flex: 200px 1fr;
     flex-wrap: wrap;

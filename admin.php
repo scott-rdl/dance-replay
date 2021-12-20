@@ -1,9 +1,8 @@
-<?php 
+<?php
 include "include/header.php";
 
 // password needed (admin.php?pass=xxx)
 include "include/assets-admin.php";
-
 ?>
 
 <section>
@@ -12,10 +11,11 @@ include "include/assets-admin.php";
     <h2>ADD SCHOOL</h2>
     <form class="admin" method="post" action="">
         <input type="text" name="school-name" placeholder="SCHOOL NAME" required />
+        <input type="hidden" name="token" value="<?php echo newToken(); ?>" />
         <input type="submit" value="ADD">
     </form>
 
-  
+
     <br />
     <h2>ADD SHOW</h2>
     <form class="admin" method="post" action="" enctype="multipart/form-data">
@@ -23,14 +23,13 @@ include "include/assets-admin.php";
         <select name="show-school" required>
             <option value="">-- SCHOOL --</option>
 
-            <?php 
-                $req = $bdd->query("SELECT * FROM schools");
-                
-                while ($data = $req->fetch()) {
-                    echo '<option value="'.$data['school_id'].'">'.$data['school_name'].'</option>';
-                }
+            <?php
+            $req = $bdd->query("SELECT * FROM schools");
+
+            while ($data = $req->fetch()) {
+                echo '<option value="' . $data['school_id'] . '">' . $data['school_name'] . '</option>';
+            }
             ?>
-            
         </select><br />
 
         <input type="text" name="show-title" placeholder="TITLE" required /><br />
@@ -39,6 +38,7 @@ include "include/assets-admin.php";
         <input type="number" name="show-size" placeholder="15" size="5" step="0.1" required /> Go<br />
         <input type="url" name="show-url" placeholder="https://drive.google.com/uc?export=download&id=..." required><br />
         <input type="file" name="cover" /><br />
+        <input type="hidden" name="token" value="<?php echo newToken(); ?>" />
         <input type="submit" value="ADD">
 
     </form>

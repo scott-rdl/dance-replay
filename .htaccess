@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule "^(\w+)$" ?s=$1 [L,QSA]
+RewriteRule "^(\w+)$" ?key=$1 [L,QSA]
